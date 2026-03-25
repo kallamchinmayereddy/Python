@@ -1,12 +1,12 @@
 import requests
 
-BOT_TOKEN = "7869285174:AAG7tLxec_9FJKu5I0B8Pc9DvGYCyy6vXF4"
-CHAT_ID = "8006409098"
+BOT_TOKEN = "your_token"
+CHAT_ID = "your_id"
 
 def send_telegram_message(message):
     url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
     payload = {
-        "chat_id": 8006409098,
+        "chat_id": your_id,
         "text": message
     }
     response = requests.post(url, data=payload)
